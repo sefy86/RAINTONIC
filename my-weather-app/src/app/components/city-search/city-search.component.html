@@ -1,0 +1,76 @@
+<div class="city-search">
+
+  <div class="icon-bar">
+    <i class="sun" title="sun"></i>
+    <i class="cloudy" title="cloudy"></i>
+    <i class="rainy-day" title="rainy-day"></i>
+    <i class="storm" title="storm"></i>
+  </div>
+
+
+
+  <div class="search-container">
+    <!-- Input per la ricerca -->
+    <input class="search-input" [(ngModel)]="cityName" placeholder="Inserisci il nome della città" />
+
+    <!-- Pulsante di ricerca -->
+    <button class="search-button" (click)="searchCity()">Cerca</button>
+
+    <!-- Pulsante "Aggiungi ai preferiti", visibile solo dopo la ricerca -->
+    <button class="favorite-button" *ngIf="weatherData" (click)="addToFavorites()">Aggiungi ai preferiti</button>
+  </div>
+
+
+  <!-- Contenitore dei dati meteo -->
+  <div class="content" *ngIf="weatherData">
+
+    <div class="row">
+      <div class="image-container"></div>
+      <div class="temperature">
+        <h3>{{ weatherData.temperature }}°C</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="section-2">
+        <div class="top-info">
+          <h2>Meteo {{ cityName }}</h2>
+        </div>
+        <div class="bottom-info">
+          <div class="info-box">
+            <p>Temperatura: {{ weatherData.temperature }}°C</p>
+          </div>
+          <div class="info-box">
+            <p>Velocità del vento: {{ weatherData.windSpeed }} km/h</p>
+          </div>
+        <!--  <div class="info-box">
+            <p>Umidità: {{ weatherData.humidity }}%</p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Mostra un errore se presente -->
+  <div *ngIf="error" class="error">
+    {{ error }}
+  </div>
+  <div class="section-3">
+    <h3>Città preferite</h3>
+    <div *ngIf="favoriteCities.length > 0">
+
+      <ul>
+        <li *ngFor="let city of favoriteCities">
+          {{ city }}
+          <button (click)="removeFromFavorites(city)">Rimuovi</button>
+          <button (click)="searchFavoriteCity(city)">Cerca di nuovo</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <!-- Elenco delle città preferite -->
+
+</div>
