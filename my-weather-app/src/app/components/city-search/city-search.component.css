@@ -55,7 +55,6 @@
   font-weight: bold;
   font-family:sans-serif;
   color: whitsmoke;
-
 }
 .section-2{
   background:linear-gradient(to bottom, #1e2a78,#15224a);
@@ -70,7 +69,6 @@
   border-radius: 5px;
   font-family:sans-serif;
 }
-
 .top-info,
 .top-bottom {
   display: flex;
@@ -78,32 +76,26 @@
   align-items: center;
   width: 100%;
 }
-
 .info-box{
   text-align: center;
 }
-
 p{
   font-size: 20px;
 }
-
 .icon-bar {
   display: flex;
   justify-content: space-around;
   margin-top: 40px;
-  margin-bottom: 20px; /* Spazio tra le icone e il campo di ricerca */
+  margin-bottom: 20px;
 }
-
 .icon-bar i {
   font-size: 24px;
-  color: #007BFF; /* Colore delle icone */
+  color: #007BFF;
   cursor: pointer;
 }
-
 .icon-bar i:hover {
-  color: #0056b3; /* Colore quando l'icona è attivata (hover) */
+  color: #0056b3;
 }
-
 .sun {
   background-image: url("./sun.png");
   background-position: center;
@@ -149,8 +141,6 @@ p{
 .content + .section-3 {
   margin-top: 360px;
 }
-
-/* div section-3 */
 .section-3 {
   background-color: #f9f9f9;
   padding: 20px;
@@ -165,15 +155,12 @@ p{
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
-
-
 .section-3 h3 {
   text-align: center;
   font-size: 22px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-
 .section-3 p, li {
   font-size: 16px;
   color: #333;
@@ -181,7 +168,6 @@ p{
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-
 .section-3 button {
   padding: 5px 15px;
   background-color: #1e2a78;
@@ -192,11 +178,9 @@ p{
   margin-top: 10px;
   margin-right: 10px;
 }
-
 .section-3 button:hover {
   background-color: #162061;
 }
-
 .section-3 .button-container {
   margin-top: 20px;
 }
