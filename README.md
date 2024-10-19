@@ -2,7 +2,7 @@
 
 # MyWeatherApp
 
-Questo progetto è stato creato da **Serafina Agnello** ealizzato per l'azienda **Raintonic** come test per ottenere lo stage, in collaborazione con **Forema**.
+Questo progetto è stato creato da **Serafina Agnello** realizzato per l'azienda **Raintonic** come test per ottenere lo stage, in collaborazione con **Forema**.
 
 ## Descrizione
 
