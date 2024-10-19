@@ -174,16 +174,14 @@ p{
   text-transform: uppercase;
 }
 
-/* Migliora il testo e le informazioni all'interno */
 .section-3 p, li {
   font-size: 16px;
-  color: #333; /* Colore del testo più scuro */
-  line-height: 1.8; /* Aumenta lo spazio tra le righe per leggibilità */
-  margin-bottom: 20px; /* Spazio tra i paragrafi */
-  text-transform: uppercase; /* Maiuscolo per il testo */
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
-/* Pulsanti in linea con quelli già esistenti */
 .section-3 button {
   padding: 5px 15px;
   background-color: #1e2a78;
@@ -196,10 +194,9 @@ p{
 }
 
 .section-3 button:hover {
-  background-color: #162061; /* Colore leggermente più scuro al passaggio del mouse */
+  background-color: #162061;
 }
 
-/* Aggiungi uno spazio tra il testo e il pulsante */
 .section-3 .button-container {
-  margin-top: 20px; /* Spazio tra l'ultimo paragrafo e il pulsante */
+  margin-top: 20px;
 }
