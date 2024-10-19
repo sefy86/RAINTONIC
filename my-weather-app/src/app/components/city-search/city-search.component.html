@@ -7,8 +7,6 @@
     <i class="storm" title="storm"></i>
   </div>
 
-
-
   <div class="search-container">
     <!-- Input per la ricerca -->
     <input class="search-input" [(ngModel)]="cityName" placeholder="Inserisci il nome della città" />
@@ -19,7 +17,6 @@
     <!-- Pulsante "Aggiungi ai preferiti", visibile solo dopo la ricerca -->
     <button class="favorite-button" *ngIf="weatherData" (click)="addToFavorites()">Aggiungi ai preferiti</button>
   </div>
-
 
   <!-- Contenitore dei dati meteo -->
   <div class="content" *ngIf="weatherData">
@@ -68,6 +65,5 @@
       </ul>
     </div>
   </div>
-
 
 </div>
